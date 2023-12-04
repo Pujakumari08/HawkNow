@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawker's In Way</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"> <!-- Your custom styles -->
+</head>
+
+<body>
+
+    <!-- ---------------------NAVBAR------------------------------------------- -->
+    <div class="bg-gray-700 text-white">
+        <nav class="bg-gray-800 shadow-lg text-white">
+            <div class="container mx-auto flex justify-between items-center py-4">
+                <div class="text-xl font-bold">HawkNow</div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="hover:text-gray-600">Home</a>
+                    <a href="in.html" class="hover:text-gray-600">Sign In</a>
+                    <a href="up.html"><button class="bg-blue-500 text-white py-2 px-4 rounded-full">Sign Up</button></a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden bg-gray-700">
+                <div class="p-4 border-b border-gray-200">
+                    <a href="index.html" class="block text-white-700 hover:text-blue-500 py-2">Home</a>
+                    <a href="logout.html" class="block text-white-700 hover:text-blue-500 py-2">LogOut</a>
+                </div>
+                <div class="p-4">
+                    <a href="in.html"
+                        class="block bg-blue-500 text-white font-semibold text-center py-2 rounded-full">Sign In</a>
+                    <a href="up.html"
+                        class="block bg-blue-500 text-white font-semibold text-center py-2 mt-2 rounded-full">Sign
+                        Up</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- -------------------item section -------------------------------------->
+        <div class="bg-gray-100">
+            <div class="container mx-auto py-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- 1.Product Card  -->
+                    <div class="bg-white rounded-lg shadow-md p-4">
+                        <!-- Product Image -->
+                        <img src="og.jpg" alt="Fruit" class="w-80 h-40 object-cover  rounded-md mb-4">
+                        <!-- Product Title -->
+                        <h3 class="bg-green-700 text-center font-semibold mb-2">Orange</h3>
+                        <!-- Product Price -->
+                        <p class="text-gray-600 mb-2">₹120 per kg</p>
+                        <!-- Wishlist, Add to Cart, Order -->
+                        <div class="flex justify-between items-center">
+                            <button class="text-gray-500 hover:text-red-500 focus:outline-none">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="bg-green-500 text-white py-1 px-3 rounded-md hover:bg-green-600">Add to
+                                Basket</button>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600">Order</button>
+                        </div>
+                    </div>
+
+                    <!-- 2. product cards -->
+                    <div class="bg-white rounded-lg shadow-md p-4">
+                        <!-- Product Image -->
+                        <img src="kiw.jpg" alt="Fruit" class="w-80 h-40 object-cover rounded-md mb-4">
+                        <!-- Product Title -->
+                        <h3 class="bg-green-700 text-center font-semibold mb-2">Kiwi</h3>
+                        <!-- Product Price -->
+                        <p class="text-gray-600 mb-2">₹150 per kg</p>
+                        <!-- Wishlist, Add to Cart, Order -->
+                        <div class="flex justify-between items-center">
+                            <button class="text-gray-500 hover:text-red-500 focus:outline-none">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="bg-green-500 text-white py-1 px-3 rounded-md hover:bg-green-600">Add to
+                                Basket</button>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600">Order</button>
+                        </div>
+                    </div>
+
+                    <!-- 3.product cards-->
+                    <div class="bg-white rounded-lg shadow-md p-4">
+                        <!-- Product Image -->
+                        <img src="bro.jpg" alt="Fruit" class="w-80 h-40 object-cover rounded-md mb-4">
+                        <!-- Product Title -->
+                        <h3 class="bg-green-700 text-center font-semibold mb-2">Broccoli</h3>
+                        <!-- Product Price -->
+                        <p class="text-gray-600 mb-2">₹160 per kg</p>
+                        <!-- Wishlist, Add to Cart, Order -->
+                        <div class="flex justify-between items-center">
+                            <button class="text-gray-500 hover:text-red-500 focus:outline-none">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="bg-green-500 text-white py-1 px-3 rounded-md hover:bg-green-600">Add to
+                                Basket</button>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600">Order</button>
+                        </div>
+                    </div>
+
+                    <!-- 4. product cards  -->
+                    <div class="bg-white rounded-lg shadow-md p-4">
+                        <!-- Product Image -->
+                        <img src="mm.jpg" alt="Fruit" class="w-80 h-40 object-cover rounded-md mb-4">
+                        <!-- Product Title -->
+                        <h3 class="bg-green-700 text-center font-semibold mb-2">Muskmelon</h3>
+                        <!-- Product Price -->
+                        <p class="text-gray-600 mb-2">₹180 per kg</p>
+                        <!-- Wishlist, Add to Cart, Order -->
+                        <div class="flex justify-between items-center">
+                            <button class="text-gray-500 hover:text-red-500 focus:outline-none">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="bg-green-500 text-white py-1 px-3 rounded-md hover:bg-green-600">Add to
+                                Basket</button>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600">Order</button>
+                        </div>
+                    </div>
+
+                    <!-- 5. product cards -->
+                    <div class="bg-white rounded-lg shadow-md p-4">
+                        <!-- Product Image -->
+                        <img src="mus.jpg" alt="Fruit" class="w-80 h-40 object-cover rounded-md mb-4">
+                        <!-- Product Title -->
+                        <h3 class="bg-green-700 text-center font-semibold mb-2">Mushroom</h3>
+                        <!-- Product Price -->
+                        <p class="text-gray-600 mb-2">₹100 per kg</p>
+                        <!-- Wishlist, Add to Cart, Order -->
+                        <div class="flex justify-between items-center">
+                            <button class="text-gray-500 hover:text-red-500 focus:outline-none">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="bg-green-500 text-white py-1 px-3 rounded-md hover:bg-green-600">Add to
+                                Basket</button>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600">Order</button>
+                        </div>
+                    </div>
+
+                    <!-- 6. product cards  -->
+                    <div class="bg-white rounded-lg shadow-md p-4">
+                        <!-- Product Image -->
+                        <img src="bet.jpg" alt="Fruit" class="w-80 h-40 object-cover rounded-md mb-4">
+                        <!-- Product Title -->
+                        <h3 class="bg-green-700 text-center font-semibold mb-2">Beetroot</h3>
+                        <!-- Product Price -->
+                        <p class="text-gray-600 mb-2">₹80 per kg</p>
+                        <!-- Wishlist, Add to Cart, Order -->
+                        <div class="flex justify-between items-center">
+                            <button class="text-gray-500 hover:text-red-500 focus:outline-none">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="bg-green-500 text-white py-1 px-3 rounded-md hover:bg-green-600">Add to
+                                Basket</button>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600">Order</button>
+                        </div>
+                    </div>
+
+                    <!-- 7.more product  -->
+                    <div class="bg-white rounded-lg shadow-md p-4">
+                        <!-- Product Image -->
+                        <img src="cucu.jpg" alt="Fruit" class="w-80 h-40 object-cover rounded-md mb-4">
+                        <!-- Product Title -->
+                        <h3 class="bg-green-700 text-center font-semibold mb-2">Cucumber</h3>
+                        <!-- Product Price -->
+                        <p class="text-gray-600 mb-2">₹64 per kg</p>
+                        <!-- Wishlist, Add to Cart, Order -->
+                        <div class="flex justify-between items-center">
+                            <button class="text-gray-500 hover:text-red-500 focus:outline-none">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="bg-green-500 text-white py-1 px-3 rounded-md hover:bg-green-600">Add to
+                                Basket</button>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600">Order</button>
+                        </div>
+                    </div>
+
+                    <!-- 8.product cards  -->
+                    <div class="bg-white rounded-lg shadow-md p-4">
+                        <!-- Product Image -->
+                        <img src="cali.jpg" alt="Fruit" class="w-80 h-40 object-cover rounded-md mb-4">
+                        <!-- Product Title -->
+                        <h3 class="bg-green-700 text-center font-semibold mb-2">Cauliflower</h3>
+                        <!-- Product Price -->
+                        <p class="text-gray-600 mb-2">₹44 per kg</p>
+                        <!-- Wishlist, Add to Cart, Order -->
+                        <div class="flex justify-between items-center">
+                            <button class="text-gray-500 hover:text-red-500 focus:outline-none">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="bg-green-500 text-white py-1 px-3 rounded-md hover:bg-green-600">Add to
+                                Basket</button>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600">Order</button>
+                        </div>
+                    </div>
+
+                    <!-- 9. product cards -->
+                    <div class="bg-white rounded-lg shadow-md p-4">
+                        <!-- Product Image -->
+                        <img src="am.jpg" alt="Fruit" class="w-80 h-40 object-cover rounded-md mb-4">
+                        <!-- Product Title -->
+                        <h3 class="bg-green-700 text-center font-semibold mb-2">Amla</h3>
+                        <!-- Product Price -->
+                        <p class="text-gray-600 mb-2">₹22 per kg</p>
+                        <!-- Wishlist, Add to Cart, Order -->
+                        <div class="flex justify-between items-center">
+                            <button class="text-gray-500 hover:text-red-500 focus:outline-none">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="bg-green-500 text-white py-1 px-3 rounded-md hover:bg-green-600">Add to
+                                Basket</button>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600">Order</button>
+                        </div>
+                    </div>
+
+                    <!-- 10.product cards -->
+                    <div class="bg-white rounded-lg shadow-md p-4">
+                        <!-- Product Image -->
+                        <img src="mm.jpg" alt="Fruit" class="w-80 h-40 object-cover rounded-md mb-4">
+                        <!-- Product Title -->
+                        <h3 class="bg-green-700 text-center font-semibold mb-2">Muskmelon</h3>
+                        <!-- Product Price -->
+                        <p class="text-gray-600 mb-2">₹85 per kg</p>
+                        <!-- Wishlist, Add to Cart, Order -->
+                        <div class="flex justify-between items-center">
+                            <button class="text-gray-500 hover:text-red-500 focus:outline-none">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="bg-green-500 text-white py-1 px-3 rounded-md hover:bg-green-600">Add to
+                                Basket</button>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600">Order</button>
+                        </div>
+                    </div>
+
+                    <!-- 11. product cards -->
+                    <div class="bg-white rounded-lg shadow-md p-4">
+                        <!-- Product Image -->
+                        <img src="co.jpg" alt="Fruit" class="w-80 h-40 object-cover rounded-md mb-4">
+                        <!-- Product Title -->
+                        <h3 class="bg-green-700 text-center font-semibold mb-2">Coconut</h3>
+                        <!-- Product Price -->
+                        <p class="text-gray-600 mb-2">₹60 per peice</p>
+                        <!-- Wishlist, Add to Cart, Order -->
+                        <div class="flex justify-between items-center">
+                            <button class="text-gray-500 hover:text-red-500 focus:outline-none">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="bg-green-500 text-white py-1 px-3 rounded-md hover:bg-green-600">Add to
+                                Basket</button>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600">Order</button>
+                        </div>
+                    </div>
+
+                    <!-- 12.product cards-->
+                    <div class="bg-white rounded-lg shadow-md p-4">
+                        <!-- Product Image -->
+                        <img src="sc.jpg" alt="Fruit" class="w-80 h-40 object-cover rounded-md mb-4">
+                        <!-- Product Title -->
+                        <h3 class="bg-green-700 text-center font-semibold mb-2">Sweetcorn</h3>
+                        <!-- Product Price -->
+                        <p class="text-gray-600 mb-2">₹60 per kg</p>
+                        <!-- Wishlist, Add to Cart, Order -->
+                        <div class="flex justify-between items-center">
+                            <button class="text-gray-500 hover:text-red-500 focus:outline-none">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="bg-green-500 text-white py-1 px-3 rounded-md hover:bg-green-600">Add to
+                                Basket</button>
+                            <button class="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600">Order</button>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Footer -->
+            <footer>
+                <div class="bg-gray-900 py-2 text-center text-white">
+                    <p class="text-sm">© 2023 HawkNow. All rights reserved.</p>
+                </div>
+            </footer>
+
+
+
+
+             <!-- for navbar and footer of shop pages
+            <script>
+                // Toggle mobile menu visibility
+                document.getElementById('mobileMenuButton').addEventListener('click', function () {
+                    document.getElementById('navMenu').classList.toggle('hidden');
+                });
+
+            </script> -->
+            <script src="script.js"></script>
+</body>
+
+</html>

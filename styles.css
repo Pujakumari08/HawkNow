@@ -1,0 +1,69 @@
+/* 1.for map */
+#map {
+    height: 500px;
+}
+
+
+/*2.for shops */
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+/* navbar styling in shop */
+.container {
+    max-width: 1200px;
+    padding-left: 0px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Navbar and Footer responsiveness */
+@media (min-width: 640px) {
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+
+
+
+/* shop more details */
+#vehicleDetails {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#vehicleDetails.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
